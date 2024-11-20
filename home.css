@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.home-page {
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.header-icons button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Trending Section */
+.trending {
+  display: flex;
+  gap: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Topics Section */
+.topics .topic {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.topic h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Tasks Section */
+.tasks .task {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.task img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* Footer Navigation */
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-btn {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.nav-btn.active {
+  color: #228B22;
+}

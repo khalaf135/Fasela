@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .profile-page {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .settings-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  /* User Info Section */
+  .user-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-info .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .user-info p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .stats .badge {
+    background: #e8f5e9;
+    color: #388e3c;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .stats .points {
+    background: #f9fbe7;
+    color: #8bc34a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Plants Section */
+  .plant-gallery {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .plant-gallery div {
+    text-align: center;
+  }
+  
+  .plant-gallery img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .plant-gallery p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Badges Section */
+  .badges {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .badges div {
+    text-align: center;
+    flex: 1 1 calc(50% - 15px); /* Two badges per row */
+  }
+  
+  .badges img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  
+  .badges p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Footer Navigation */
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav-btn {
+    font-size: 1.2rem;
+    color: #888;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-btn.active {
+    color: #228B22;
+  }

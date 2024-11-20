@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnose</title>
+  <link rel="stylesheet" href="diagnose.css">
+</head>
+<body>
+  <div class="diagnose-page">
+    <!-- Header -->
+    <header>
+      <h1>Diagnose Plant</h1>
+    </header>
+
+    <!-- Diagnosis Form -->
+    <section class="diagnose-form">
+      <h2>Describe the Issue</h2>
+      <textarea id="symptoms" placeholder="e.g., yellow leaves, brown spots" required></textarea>
+      <button id="diagnose-btn">Diagnose</button>
+    </section>
+
+    <!-- Diagnosis Result -->
+    <section id="diagnosis-result" class="hidden">
+      <h2>Possible Diagnosis</h2>
+      <p id="result-message"></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <a href="home.html" class="nav-btn">🏠 Home</a>
+      <a href="community.html" class="nav-btn">👥 Community</a>
+      <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
+      <a href="diagnose.html" class="nav-btn active">🩺 Diagnose</a>
+      <a href="profile.html" class="nav-btn">👤 Profile</a>
+    </nav>
+  </footer>
+
+  <script src="diagnose.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Plants</title>
+  <link rel="stylesheet" href="myplant.css">
+</head>
+<body>
+  <div class="myplant-page">
+    <!-- Header -->
+    <header>
+      <h1>My Plants</h1>
+      <div class="header-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">☰</button>
+      </div>
+    </header>
+
+    <!-- Plant List -->
+    <section>
+      <div class="section-header">
+        <h2>My plants</h2>
+        <a href="#" class="view-all">View all</a>
+      </div>
+      <div class="plant-list">
+        <!-- Plant Card -->
+        <div class="plant-card">
+          <img src="cactus.jpg" alt="Cactus">
+          <div class="plant-info">
+            <h3>Cactus</h3>
+            <p>Time since added: 3 weeks.</p>
+            <a href="#" class="details-link">Details</a>
+          </div>
+        </div>
+        <div class="plant-card">
+          <img src="bamboo.jpg" alt="Bamboo">
+          <div class="plant-info">
+            <h3>Bamboo</h3>
+            <p>Time since added: 2 months.</p>
+            <a href="#" class="details-link">Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add Plant -->
+    <section>
+      <h2>Want to add a plant?</h2>
+      <button class="add-plant-btn">🌍 Locate your location</button>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <a href="home.html" class="nav-btn" id="home">🏠 Home</a>
+      <a href="community.html" class="nav-btn" id="community">👥 Community</a>
+      <a href="myplant.html" class="nav-btn active" id="my-plant">🌱 My Plant</a>
+      <a href="diagnose.html" class="nav-btn" id="diagnose">🩺 Diagnose</a>
+      <a href="profile.html" class="nav-btn" id="profile">👤 Profile</a>
+    </nav>
+  </footer>
+
+  <script src="myplant.js"></script>
+</body>
+</html>
