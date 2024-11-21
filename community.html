@@ -10,40 +10,98 @@
   <div class="community-page">
     <!-- Header -->
     <header>
-      <h1>Community Discussions</h1>
+      <h1>Community</h1>
+      <p id="location">📍 Jeddah</p>
+      <button class="messages-btn">✉️</button>
     </header>
 
     <!-- Posts Section -->
-    <section class="posts">
+    <section id="posts" class="posts">
+      <!-- Post 1 -->
       <div class="post">
-        <h2>How to care for succulents?</h2>
-        <p>Join the discussion and share your tips!</p>
-        <button class="reply-btn">Reply</button>
+        <div class="post-header">
+          <img src="images/user1.png" alt="User Avatar" class="avatar">
+          <div class="post-info">
+            <h3>Ghala Alsharif</h3>
+            <p>10 min • far</p>
+          </div>
+          <button class="menu-btn">⋮</button>
+        </div>
+        <p class="post-content">Does anyone know when can I buy a good quality rosemary plant around here?</p>
+        <div class="post-actions">
+          <span>❤️ 1.6k</span>
+          <span>💬 200</span>
+          <span>✈️</span>
+        </div>
       </div>
+
+      <!-- Post 2 -->
       <div class="post">
-        <h2>Best soil for houseplants?</h2>
-        <p>What soil types work best for your plants?</p>
-        <button class="reply-btn">Reply</button>
+        <div class="post-header">
+          <img src="images/user2.png" alt="User Avatar" class="avatar">
+          <div class="post-info">
+            <h3>Abdulaziz</h3>
+            <p>20 min • close</p>
+          </div>
+          <button class="menu-btn">⋮</button>
+        </div>
+        <p class="post-content">
+          I have some extra parsley seeds that I no longer need. If anyone nearby wants them, let me know!
+          <br>#seeds_swap #plant_swap
+        </p>
+        <div class="post-actions">
+          <span>❤️ 1.6k</span>
+          <span>💬 200</span>
+          <span>✈️</span>
+        </div>
       </div>
+
+      <!-- Post 3 -->
       <div class="post">
-        <h2>Common pests in indoor plants</h2>
-        <p>How do you manage pests like aphids or mites?</p>
-        <button class="reply-btn">Reply</button>
+        <div class="post-header">
+          <img src="images/user3.png" alt="User Avatar" class="avatar">
+          <div class="post-info">
+            <h3>Mozn Alshehri</h3>
+            <p>30 min • far</p>
+          </div>
+          <button class="menu-btn">⋮</button>
+        </div>
+        <p class="post-content">
+          Does anyone here have experience growing strawberries? Any beginner tips?
+          <br>#strawberries #tips #beginner
+        </p>
+        <div class="post-actions">
+          <span>❤️ 1.6k</span>
+          <span>💬 200</span>
+          <span>✈️</span>
+        </div>
       </div>
     </section>
+
+   <!-- Add Post Button -->
+   <button class="add-post-btn" id="addPostBtn">➕</button>
+
+<!-- Add Post Modal -->
+<div class="add-post-modal hidden" id="addPostModal">
+  <div class="modal-content">
+    <h2>Add a New Post</h2>
+    <form id="addPostForm">
+      <textarea id="postContent" placeholder="Share your thoughts..." required></textarea>
+      <button type="submit" class="submit-post-btn">Post</button>    </form>
+    <button class="close-modal-btn" id="closeModalBtn">✖</button>
   </div>
+</div>
+ <!-- Footer Navigation -->
+ <footer>
+   <nav>
+     <a href="home.html" class="nav-btn">🏠 Home</a>
+     <a href="community.html" class="nav-btn active">👥 Community</a>
+     <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
+     <a href="diagnose.html" class="nav-btn">🩺 Diagnose</a>
+     <a href="profile.html" class="nav-btn">👤 Profile</a>
+   </nav>
+ </footer>
 
-  <!-- Footer -->
-  <footer>
-    <nav>
-      <a href="home.html" class="nav-btn">🏠 Home</a>
-      <a href="community.html" class="nav-btn active">👥 Community</a>
-      <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
-      <a href="diagnose.html" class="nav-btn">🩺 Diagnose</a>
-      <a href="profile.html" class="nav-btn">👤 Profile</a>
-    </nav>
-  </footer>
-
-  <script src="community.js"></script>
+ <script src="community.js"></script>
 </body>
 </html>

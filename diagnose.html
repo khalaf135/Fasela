@@ -3,21 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diagnose</title>
+  <title>Diagnose Plant</title>
   <link rel="stylesheet" href="diagnose.css">
 </head>
 <body>
   <div class="diagnose-page">
     <!-- Header -->
     <header>
-      <h1>Diagnose Plant</h1>
+      <h1>Diagnose Your Plant</h1>
     </header>
 
     <!-- Diagnosis Form -->
     <section class="diagnose-form">
-      <h2>Describe the Issue</h2>
-      <textarea id="symptoms" placeholder="e.g., yellow leaves, brown spots" required></textarea>
-      <button id="diagnose-btn">Diagnose</button>
+      <h2>Describe the Problem</h2>
+      <form id="diagnoseForm">
+        <!-- Plant Name -->
+        <label for="plantName">Plant Name</label>
+        <input type="text" id="plantName" placeholder="e.g., Cactus" required>
+
+        <!-- Plant Issue -->
+        <label for="issue">Issue</label>
+        <textarea id="issue" placeholder="e.g., leaves are turning yellow" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="diagnose-btn">Diagnose</button>
+      </form>
     </section>
 
     <!-- Diagnosis Result -->
@@ -26,15 +36,13 @@
       <p id="result-message"></p>
     </section>
   </div>
-
-  <!-- Footer -->
   <footer>
     <nav>
-      <a href="home.html" class="nav-btn">🏠 Home</a>
-      <a href="community.html" class="nav-btn">👥 Community</a>
-      <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
-      <a href="diagnose.html" class="nav-btn active">🩺 Diagnose</a>
-      <a href="profile.html" class="nav-btn">👤 Profile</a>
+      <a href="home.html" class="nav-btn" id="home">🏠 Home</a>
+      <a href="community.html" class="nav-btn" id="community">👥 Community</a>
+      <a href="myplant.html" class="nav-btn" id="my-plant">🌱 My Plant</a>
+      <a href="diagnose.html" class="nav-btn active" id="diagnose">🩺 Diagnose</a>
+      <a href="profile.html" class="nav-btn" id="profile">👤 Profile</a>
     </nav>
   </footer>
 

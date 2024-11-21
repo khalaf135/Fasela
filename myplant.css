@@ -1,106 +1,153 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .myplant-page {
-    padding: 20px;
-  }
-  
-  /* Header Section */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 1.5rem;
-  }
-  
-  header .icon-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  /* Plants Section */
-  .plant-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .plant-card {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .plant-card img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-  
-  .plant-info h3 {
-    font-size: 1rem;
-  }
-  
-  .plant-info p {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .add-plant-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #e8f5e9;
-    border: 1px solid #228B22;
-    border-radius: 10px;
-    color: #228B22;
-    font-size: 1rem;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  /* Footer Navigation */
-  footer nav {
-    display: flex;
-    justify-content: space-around;
-    background: #fff;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .nav-btn {
-    font-size: 1.2rem;
-    color: #888;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .nav-btn.active {
-    color: #228B22;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.my-plants-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Plants Section */
+.plants-section {
+  margin-bottom: 30px;
+}
+
+.plants-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: #28a745;
+  text-decoration: none;
+}
+
+.plants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.plant-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.plant-info {
+  padding: 10px;
+}
+
+.plant-info h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.plant-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.details-btn {
+  font-size: 0.9rem;
+  color: #28a745;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Add Plant Section */
+.add-plant-section {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.add-plant-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.locate-btn {
+  font-size: 1rem;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.locate-btn:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-btn {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.nav-btn.active {
+  color: #28a745;
+}

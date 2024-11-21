@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Home</title>
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <div class="home-page">
     <!-- Header -->
     <header>
-      <h1>Good Afternoon, Ghala</h1>
-      <p>It's 29° in Jeddah, chance of rain 3%</p>
+      <div class="header-content">
+        <h1>Good Afternoon, Mozn</h1>
+        <p id="weather-info">Fetching weather data...</p>
+      </div>
       <div class="header-icons">
         <button class="icon-btn">🔍</button>
         <button class="icon-btn">➕</button>
@@ -19,21 +21,23 @@
     </header>
 
     <!-- Trending Section -->
-    <section>
-      <h2 class="section-title">Trending in Jeddah <a href="#" class="view-all">View all</a></h2>
+    <section class="trending-section">
+      <h2>Trending in <span id="location">Your Area</span> <a href="#" class="view-all">View all</a></h2>
       <div class="trending">
         <div class="card">
           <img src="images/plant1.png" alt="Peperomia Houseplant">
+          <p>Peperomia Houseplant</p>
         </div>
         <div class="card">
           <img src="images/plant2.png" alt="Asplenium Houseplant">
+          <p>Asplenium Houseplant</p>
         </div>
       </div>
     </section>
 
     <!-- Topics Section -->
-    <section>
-      <h2 class="section-title">Topics <a href="#" class="view-all">View all</a></h2>
+    <section class="topics-section">
+      <h2>Topics <a href="#" class="view-all">View all</a></h2>
       <div class="topics">
         <div class="topic">
           <h3>Controlling Aphids in indoor plants</h3>
@@ -51,36 +55,38 @@
     </section>
 
     <!-- Tasks Section -->
-    <section>
-      <h2 class="section-title">Today's Tasks <a href="#" class="view-all">View all</a></h2>
+    <section class="tasks-section">
+      <h2>Today's Tasks <a href="#" class="view-all">View all</a></h2>
       <div class="tasks">
         <div class="task">
           <img src="images/cactus.png" alt="Cactus">
           <div class="task-content">
             <h3>Water your Cactus today (Backyard)</h3>
-            <p>It's 2 weeks old. Water it twice a week.</p>
+            <p>It's 2 weeks old, you have to water it twice a week.</p>
           </div>
         </div>
         <div class="task">
           <img src="images/bamboo.png" alt="Bamboo">
           <div class="task-content">
             <h3>Prune the dead branches of Bamboo</h3>
-            <p>2–3 weeks since you last pruned.</p>
+            <p>It's been 2–3 weeks since you have pruned the dead branches.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Footer Navigation -->
-    <footer>
-      <nav>
-        <a href="home.html" class="nav-btn active">🏠 Home</a>
-        <a href="community.html" class="nav-btn">👥 Community</a>
-        <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
-        <a href="diagnose.html" class="nav-btn">🩺 Diagnose</a>
-        <a href="profile.html" class="nav-btn">👤 Profile</a>
-      </nav>
-    </footer>
   </div>
+
+  <!-- Footer Navigation -->
+  <footer>
+    <nav>
+      <a href="home.html" class="nav-btn active">🏠 Home</a>
+      <a href="community.html" class="nav-btn">👥 Community</a>
+      <a href="myplant.html" class="nav-btn">🌱 My Plant</a>
+      <a href="diagnose.html" class="nav-btn">🩺 Diagnose</a>
+      <a href="profile.html" class="nav-btn">👤 Profile</a>
+    </nav>
+  </footer>
+
+  <script src="home.js"></script>
 </body>
 </html>

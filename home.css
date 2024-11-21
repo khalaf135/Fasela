@@ -9,9 +9,12 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
+  margin: 0;
 }
 
 .home-page {
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -23,68 +26,92 @@ header {
   margin-bottom: 20px;
 }
 
-header h1 {
+.header-content h1 {
   font-size: 1.5rem;
+  color: #333;
 }
 
-header p {
+.header-content p {
   font-size: 0.9rem;
   color: #555;
 }
 
 .header-icons button {
+  font-size: 1.2rem;
   background: none;
   border: none;
-  font-size: 1.2rem;
   cursor: pointer;
-  margin-left: 10px;
 }
 
 /* Trending Section */
+.trending-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
 .trending {
   display: flex;
   gap: 10px;
 }
 
-.card img {
+.trending .card {
+  flex: 1;
+  text-align: center;
+}
+
+.trending .card img {
   width: 100%;
   border-radius: 10px;
 }
 
+.trending .card p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
 /* Topics Section */
-.topics .topic {
+.topics-section .topic {
   background: #fff;
   padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
 /* Tasks Section */
-.tasks .task {
+.tasks-section .task {
   display: flex;
-  align-items: center;
+  gap: 10px;
   background: #fff;
   padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
-.task img {
+.tasks-section .task img {
   width: 60px;
   height: 60px;
-  border-radius: 10px;
-  margin-right: 10px;
+  border-radius: 5px;
 }
 
-/* Footer Navigation */
+.tasks-section .task-content h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.tasks-section .task-content p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer */
 footer nav {
   display: flex;
   justify-content: space-around;
   background: #fff;
-  padding: 10px;
   border-top: 1px solid #ddd;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -94,10 +121,6 @@ footer nav {
 .nav-btn {
   font-size: 1.2rem;
   color: #888;
-  text-decoration: none;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 .nav-btn.active {

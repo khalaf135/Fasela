@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = passwordInput.value; // Get password value
   
       // Predefined credentials
-      const validEmail = "admin@gmail.com";
-      const validPassword = "admin";
+      const validEmail = "MoznAlshehri@gmail.com";
+      const validPassword = "mozn";
   
       if (email === validEmail && password === validPassword) {
         // Redirect to home page

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="myplant.css">
 </head>
 <body>
-  <div class="myplant-page">
+  <div class="my-plants-page">
     <!-- Header -->
     <header>
       <h1>My Plants</h1>
@@ -17,20 +17,16 @@
       </div>
     </header>
 
-    <!-- Plant List -->
-    <section>
-      <div class="section-header">
-        <h2>My plants</h2>
-        <a href="#" class="view-all">View all</a>
-      </div>
-      <div class="plant-list">
-        <!-- Plant Card -->
+    <!-- Plants Section -->
+    <section class="plants-section">
+      <h2>My plants <a href="#" class="view-all">View all</a></h2>
+      <div class="plants-list">
         <div class="plant-card">
           <img src="images/cactus.png" alt="Cactus">
           <div class="plant-info">
             <h3>Cactus</h3>
             <p>Time since added: 3 weeks.</p>
-            <a href="#" class="details-link">Details</a>
+            <a href="#" class="details-btn">Details</a>
           </div>
         </div>
         <div class="plant-card">
@@ -38,27 +34,27 @@
           <div class="plant-info">
             <h3>Bamboo</h3>
             <p>Time since added: 2 months.</p>
-            <a href="#" class="details-link">Details</a>
+            <a href="#" class="details-btn">Details</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Add Plant -->
-    <section>
-      <h2>Want to add a plant?</h2>
-      <button class="add-plant-btn">🌍 Locate your location</button>
+    <!-- Add Plant Section -->
+    <section class="add-plant-section">
+      <p>Want to add a plant?</p>
+      <button id="locatePlantBtn" class="locate-btn">🌍 Locate your location</button>
     </section>
   </div>
 
-  <!-- Footer -->
+  <!-- Footer Navigation -->
   <footer>
     <nav>
-      <a href="home.html" class="nav-btn" id="home">🏠 Home</a>
-      <a href="community.html" class="nav-btn" id="community">👥 Community</a>
-      <a href="myplant.html" class="nav-btn active" id="my-plant">🌱 My Plant</a>
-      <a href="diagnose.html" class="nav-btn" id="diagnose">🩺 Diagnose</a>
-      <a href="profile.html" class="nav-btn" id="profile">👤 Profile</a>
+      <a href="home.html" class="nav-btn">🏠 Home</a>
+      <a href="community.html" class="nav-btn">👥 Community</a>
+      <a href="myplant.html" class="nav-btn active">🌱 My Plant</a>
+      <a href="diagnose.html" class="nav-btn">🩺 Diagnose</a>
+      <a href="profile.html" class="nav-btn">👤 Profile</a>
     </nav>
   </footer>
 
