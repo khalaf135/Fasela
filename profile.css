@@ -6,15 +6,17 @@
   }
   
   body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     padding: 20px;
+    margin: 0;
   }
   
   .profile-page {
     max-width: 400px;
     margin: 0 auto;
+    text-align: center;
   }
   
   /* Header Section */
@@ -26,7 +28,7 @@
   }
   
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333;
   }
   
@@ -41,24 +43,28 @@
   /* User Info Section */
   .user-info {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; /* Add spacing below the section */
+    border-bottom: 1px solid #ddd; /* Add line after user info */
   }
   
   .user-info .avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px; /* Avatar size */
+    height: 60px;
     border-radius: 50%;
     margin-bottom: 10px;
   }
   
   .user-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
+    color: #333;
   }
   
   .user-info p {
     font-size: 0.9rem;
-    color: #555;
+    color: #777;
+    margin-bottom: 10px;
   }
   
   .stats {
@@ -73,7 +79,7 @@
     color: #388e3c;
     padding: 5px 10px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .stats .points {
@@ -81,54 +87,100 @@
     color: #8bc34a;
     padding: 5px 10px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
-  /* Plants Section */
-  .plant-gallery {
+/* Plants Section */
+.plant-gallery {
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Space between the plant cards */
+    justify-content: flex-start; /* Align plant cards to the left */
     margin-bottom: 20px;
   }
   
   .plant-gallery div {
-    text-align: center;
+    text-align: center; /* Center the text below each image */
+    max-width: 150px; /* Optional: Set a maximum width for plant cards */
   }
   
   .plant-gallery img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    margin-bottom: 5px;
+    width: 120px; /* Plant image width */
+    height: 120px; /* Plant image height */
+    border-radius: 10px; /* Rounded corners for the images */
+    object-fit: cover; /* Ensure the image fits nicely */
+    margin-bottom: 10px; /* Space between image and text */
   }
   
   .plant-gallery p {
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 1rem; /* Font size for plant names */
+    font-weight: bold; /* Make the plant names bold */
+    color: #333; /* Plant name color */
+  }
+  
+  /* Align "Plants" Heading to the Left */
+  h2 {
+    text-align: left; /* Align heading to the left */
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  /* Line Between Plants Section */
+  .plant-gallery {
+    padding-bottom: 20px; /* Add spacing below the section */
+    border-bottom: 1px solid #ddd; /* Add line after plants section */
   }
   
   /* Badges Section */
   .badges {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
     margin-bottom: 20px;
-    flex-wrap: wrap;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows badges to wrap onto the next line if there are more */
   }
   
   .badges div {
     text-align: center;
-    flex: 1 1 calc(50% - 15px); /* Two badges per row */
+    flex: 1;
   }
   
   .badges img {
-    width: 60px;
-    height: 60px;
+    width: 80px; /* Badge size */
+    height: 80px;
     margin-bottom: 5px;
   }
   
   .badges p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #555;
+  }
+  
+  /* View All Link */
+  .badges-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .badges-header h2 {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .badges-header .view-all {
+    font-size: 0.9rem;
+    color: #228B22;
+    text-decoration: none;
+  }
+  
+  .badges-header .view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Space After Badges */
+  .badges {
+    margin-bottom: 40px; /* Extra space for badges */
   }
   
   /* Footer Navigation */
@@ -155,4 +207,8 @@
   
   .nav-btn.active {
     color: #228B22;
+  }
+  
+  .nav-btn:focus {
+    outline: none;
   }

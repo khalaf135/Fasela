@@ -6,13 +6,17 @@
   }
   
   body {
-    font-family: "Arial", sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+  }
+  
+  .myplant-page {
     padding: 20px;
   }
   
-  .myplant-page header {
+  /* Header Section */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,33 +27,18 @@
     font-size: 1.5rem;
   }
   
-  .icon-btn {
+  header .icon-btn {
     background: none;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
   }
   
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .section-header h2 {
-    font-size: 1.2rem;
-  }
-  
-  .view-all {
-    font-size: 0.9rem;
-    color: #228B22;
-    text-decoration: none;
-  }
-  
+  /* Plants Section */
   .plant-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
   
   .plant-card {
@@ -57,63 +46,59 @@
     align-items: center;
     background: #fff;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #ddd;
   }
   
   .plant-card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
     margin-right: 10px;
   }
   
   .plant-info h3 {
-    margin: 0;
     font-size: 1rem;
   }
   
   .plant-info p {
-    margin: 5px 0;
     font-size: 0.9rem;
     color: #555;
-  }
-  
-  .details-link {
-    font-size: 0.9rem;
-    color: #228B22;
-    text-decoration: none;
   }
   
   .add-plant-btn {
     display: block;
     width: 100%;
-    text-align: center;
     padding: 10px;
     background: #e8f5e9;
     border: 1px solid #228B22;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 10px;
     color: #228B22;
+    font-size: 1rem;
+    text-align: center;
     cursor: pointer;
-    margin-top: 10px;
   }
   
+  /* Footer Navigation */
   footer nav {
     display: flex;
     justify-content: space-around;
     background: #fff;
     padding: 10px;
     border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
   .nav-btn {
+    font-size: 1.2rem;
+    color: #888;
+    text-decoration: none;
     background: none;
     border: none;
-    font-size: 1rem;
-    color: #888;
     cursor: pointer;
-    text-decoration: none;
   }
   
   .nav-btn.active {

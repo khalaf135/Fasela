@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* Header Section */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,6 @@ header {
 
 header h1 {
   font-size: 1.5rem;
-  color: #333;
 }
 
 header p {
@@ -37,8 +36,8 @@ header p {
   background: none;
   border: none;
   font-size: 1.2rem;
-  margin-left: 10px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Trending Section */
@@ -49,7 +48,7 @@ header p {
 
 .card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* Topics Section */
@@ -57,13 +56,8 @@ header p {
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #ddd;
-}
-
-.topic h3 {
-  font-size: 1rem;
-  margin-bottom: 5px;
 }
 
 /* Tasks Section */
@@ -73,13 +67,14 @@ header p {
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #ddd;
 }
 
 .task img {
   width: 60px;
   height: 60px;
+  border-radius: 10px;
   margin-right: 10px;
 }
 
@@ -90,12 +85,19 @@ footer nav {
   background: #fff;
   padding: 10px;
   border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .nav-btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #888;
   text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .nav-btn.active {
