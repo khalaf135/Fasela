@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .diagnose-page {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .diagnose-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .diagnose-form h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .diagnose-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  .diagnose-form input,
+  .diagnose-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .diagnose-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  #diagnose-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #diagnose-btn:hover {
+    background: #1a661a;
+  }
+  
+  #diagnosis-result {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .hidden {
+    display: none;
+  }
+ 
+  /* Footer Navigation */
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .nav-btn {
+    font-size: 1.2rem;
+    color: #888;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-btn.active {
+    color: #228B22;
+  }

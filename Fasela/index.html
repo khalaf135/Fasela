@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entry Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="entry-page">
+    <div class="content">
+      <!-- Logo -->
+      <img src="images/logo.png" alt="فَسِيلَة" class="logo">
+
+      <!-- Green Line Animation -->
+      <div class="line-container">
+        <div class="line"></div>
+      </div>
+
+      <!-- Quranic Phrase -->
+      <p class="quote">
+        ( إِنْ قَامَتْ عَلَى أَحَدِكُمُ الْقِيَامَةُ، وَفِي يَدِهِ فَسِيلَةٌ فَلْيَغْرِسْهَا )
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Start animation and redirect after 2 seconds
+    document.addEventListener("DOMContentLoaded", () => {
+      const line = document.querySelector('.line');
+      line.style.width = '100%'; // Animate the line to full width
+
+      // Redirect to login page after 2 seconds
+      setTimeout(() => {
+        window.location.href = 'login.html'; // Update this path if needed
+      }, 2000); // 2 seconds = 2000ms
+    });
+  </script>
+</body>
+</html>
